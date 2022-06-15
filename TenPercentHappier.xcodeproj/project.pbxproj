@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D3B431E285677BE004EEDA0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B431D285677BE004EEDA0 /* API.swift */; };
+		2D3B4321285679DA004EEDA0 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B4320285679DA004EEDA0 /* Topic.swift */; };
+		2D3B432328567B4F004EEDA0 /* TopicsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B432228567B4F004EEDA0 /* TopicsList.swift */; };
+		2D3B432528567F1D004EEDA0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B432428567F1D004EEDA0 /* BaseViewController.swift */; };
+		2D3B432928568227004EEDA0 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B432828568227004EEDA0 /* TopicCell.swift */; };
+		2D3B432B28568562004EEDA0 /* TopicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B432A28568562004EEDA0 /* TopicCellViewModel.swift */; };
+		2D3B432E285689D8004EEDA0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B432D285689D8004EEDA0 /* UIColor+Extensions.swift */; };
+		2D3B433B28569BE2004EEDA0 /* TopicsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B433A28569BE2004EEDA0 /* TopicsTableViewHeader.swift */; };
+		2D3B433D2856C84B004EEDA0 /* SubtopicsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B433C2856C84B004EEDA0 /* SubtopicsList.swift */; };
+		2D3B433F2856C868004EEDA0 /* Subtopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B433E2856C868004EEDA0 /* Subtopic.swift */; };
+		2D3B43412856C8BB004EEDA0 /* MeditationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B43402856C8BB004EEDA0 /* MeditationsList.swift */; };
+		2D3B43432856C8C6004EEDA0 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B43422856C8C6004EEDA0 /* Meditation.swift */; };
+		2D3B43452856D1C1004EEDA0 /* SubtopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B43442856D1C1004EEDA0 /* SubtopicsViewController.swift */; };
+		2D3B43472856D1F3004EEDA0 /* SubtopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B43462856D1F3004EEDA0 /* SubtopicsViewModel.swift */; };
+		2D3B434A285814EE004EEDA0 /* MeditationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B4349285814EE004EEDA0 /* MeditationData.swift */; };
+		2D6C157E2855974F0097BA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C157D2855974F0097BA24 /* AppDelegate.swift */; };
+		2D6C15802855974F0097BA24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C157F2855974F0097BA24 /* SceneDelegate.swift */; };
+		2D6C15882855974F0097BA24 /* TenPercentHappier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15862855974F0097BA24 /* TenPercentHappier.xcdatamodeld */; };
+		2D6C158A285597500097BA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C1589285597500097BA24 /* Assets.xcassets */; };
+		2D6C158D285597500097BA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C158B285597500097BA24 /* LaunchScreen.storyboard */; };
+		2D6C1598285597500097BA24 /* TenPercentHappierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C1597285597500097BA24 /* TenPercentHappierTests.swift */; };
+		2D6C15A2285597500097BA24 /* TenPercentHappierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15A1285597500097BA24 /* TenPercentHappierUITests.swift */; };
+		2D6C15A4285597500097BA24 /* TenPercentHappierUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15A3285597500097BA24 /* TenPercentHappierUITestsLaunchTests.swift */; };
+		2D6C15B2285645AA0097BA24 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15B1285645AA0097BA24 /* TopicsViewController.swift */; };
+		2D6C15B6285648CE0097BA24 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15B5285648CE0097BA24 /* Coordinating.swift */; };
+		2D6C15B8285648D90097BA24 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15B7285648D90097BA24 /* Coordinator.swift */; };
+		2D6C15BB2856497A0097BA24 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15BA2856497A0097BA24 /* Segues.swift */; };
+		2D6C15BE28564C290097BA24 /* TopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15BD28564C290097BA24 /* TopicsViewModel.swift */; };
+		2D6C15C028564CFA0097BA24 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C15BF28564CFA0097BA24 /* ViewModel.swift */; };
+		2DC7DB082858501D00E06755 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB072858501D00E06755 /* MeditationView.swift */; };
+		2DC7DB0A28592A8600E06755 /* SubtopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB0928592A8600E06755 /* SubtopicCell.swift */; };
+		2DC7DB0C28592AC900E06755 /* SubtopicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB0B28592AC900E06755 /* SubtopicCellViewModel.swift */; };
+		2DC7DB0E28592E9100E06755 /* SubtopicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB0D28592E9100E06755 /* SubtopicData.swift */; };
+		2DC7DB1228597F5800E06755 /* TopicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB1128597F5800E06755 /* TopicObject.swift */; };
+		2DC7DB142859805300E06755 /* SubtopicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB132859805300E06755 /* SubtopicObject.swift */; };
+		2DC7DB16285980DA00E06755 /* MeditationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB15285980DA00E06755 /* MeditationObject.swift */; };
+		2DC7DB192859814200E06755 /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB182859814200E06755 /* Persistor.swift */; };
+		2DC7DB1B28598DD100E06755 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7DB1A28598DD100E06755 /* Array+Extensions.swift */; };
+		6633AB0DDF39062E076B07DC /* Pods_TenPercentHappier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D057832AADEDC03232015CA /* Pods_TenPercentHappier.framework */; };
+		7DC7A8905DF910518FD4BBD0 /* Pods_TenPercentHappierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D122DBD184906174E2482BB /* Pods_TenPercentHappierTests.framework */; };
+		FEE540C6E05C2DB6FE0AFF48 /* Pods_TenPercentHappier_TenPercentHappierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5062BB5D4AAB29986004158 /* Pods_TenPercentHappier_TenPercentHappierUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D6C1594285597500097BA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D6C15722855974F0097BA24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D6C15792855974F0097BA24;
+			remoteInfo = TenPercentHappier;
+		};
+		2D6C159E285597500097BA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D6C15722855974F0097BA24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D6C15792855974F0097BA24;
+			remoteInfo = TenPercentHappier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07ED7843DE60B61FBF1F2859 /* Pods-TenPercentHappier-TenPercentHappierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappier-TenPercentHappierUITests.release.xcconfig"; path = "Target Support Files/Pods-TenPercentHappier-TenPercentHappierUITests/Pods-TenPercentHappier-TenPercentHappierUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17CCAD241C3F1BCFDE9D10CC /* Pods-TenPercentHappier-TenPercentHappierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappier-TenPercentHappierUITests.debug.xcconfig"; path = "Target Support Files/Pods-TenPercentHappier-TenPercentHappierUITests/Pods-TenPercentHappier-TenPercentHappierUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D3B431D285677BE004EEDA0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2D3B4320285679DA004EEDA0 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		2D3B432228567B4F004EEDA0 /* TopicsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsList.swift; sourceTree = "<group>"; };
+		2D3B432428567F1D004EEDA0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D3B432828568227004EEDA0 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		2D3B432A28568562004EEDA0 /* TopicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellViewModel.swift; sourceTree = "<group>"; };
+		2D3B432D285689D8004EEDA0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		2D3B433A28569BE2004EEDA0 /* TopicsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewHeader.swift; sourceTree = "<group>"; };
+		2D3B433C2856C84B004EEDA0 /* SubtopicsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsList.swift; sourceTree = "<group>"; };
+		2D3B433E2856C868004EEDA0 /* Subtopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtopic.swift; sourceTree = "<group>"; };
+		2D3B43402856C8BB004EEDA0 /* MeditationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsList.swift; sourceTree = "<group>"; };
+		2D3B43422856C8C6004EEDA0 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		2D3B43442856D1C1004EEDA0 /* SubtopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsViewController.swift; sourceTree = "<group>"; };
+		2D3B43462856D1F3004EEDA0 /* SubtopicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsViewModel.swift; sourceTree = "<group>"; };
+		2D3B4349285814EE004EEDA0 /* MeditationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationData.swift; sourceTree = "<group>"; };
+		2D6C157A2855974F0097BA24 /* TenPercentHappier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenPercentHappier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6C157D2855974F0097BA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D6C157F2855974F0097BA24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D6C15872855974F0097BA24 /* TenPercentHappier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TenPercentHappier.xcdatamodel; sourceTree = "<group>"; };
+		2D6C1589285597500097BA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D6C158C285597500097BA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D6C158E285597500097BA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6C1593285597500097BA24 /* TenPercentHappierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenPercentHappierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6C1597285597500097BA24 /* TenPercentHappierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenPercentHappierTests.swift; sourceTree = "<group>"; };
+		2D6C159D285597500097BA24 /* TenPercentHappierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenPercentHappierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6C15A1285597500097BA24 /* TenPercentHappierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenPercentHappierUITests.swift; sourceTree = "<group>"; };
+		2D6C15A3285597500097BA24 /* TenPercentHappierUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenPercentHappierUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D6C15B1285645AA0097BA24 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
+		2D6C15B5285648CE0097BA24 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		2D6C15B7285648D90097BA24 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2D6C15BA2856497A0097BA24 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		2D6C15BD28564C290097BA24 /* TopicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewModel.swift; sourceTree = "<group>"; };
+		2D6C15BF28564CFA0097BA24 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2DC7DB072858501D00E06755 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		2DC7DB0928592A8600E06755 /* SubtopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicCell.swift; sourceTree = "<group>"; };
+		2DC7DB0B28592AC900E06755 /* SubtopicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicCellViewModel.swift; sourceTree = "<group>"; };
+		2DC7DB0D28592E9100E06755 /* SubtopicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicData.swift; sourceTree = "<group>"; };
+		2DC7DB1128597F5800E06755 /* TopicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicObject.swift; sourceTree = "<group>"; };
+		2DC7DB132859805300E06755 /* SubtopicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicObject.swift; sourceTree = "<group>"; };
+		2DC7DB15285980DA00E06755 /* MeditationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationObject.swift; sourceTree = "<group>"; };
+		2DC7DB182859814200E06755 /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
+		2DC7DB1A28598DD100E06755 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		33EE055C342EE332C6E1EF9C /* Pods-TenPercentHappier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappier.debug.xcconfig"; path = "Target Support Files/Pods-TenPercentHappier/Pods-TenPercentHappier.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7B47E5A416CCA5A1BFCAB8 /* Pods-TenPercentHappierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappierTests.debug.xcconfig"; path = "Target Support Files/Pods-TenPercentHappierTests/Pods-TenPercentHappierTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D057832AADEDC03232015CA /* Pods_TenPercentHappier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenPercentHappier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D122DBD184906174E2482BB /* Pods_TenPercentHappierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenPercentHappierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5062BB5D4AAB29986004158 /* Pods_TenPercentHappier_TenPercentHappierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenPercentHappier_TenPercentHappierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74A5C946A41101123E7EBEC /* Pods-TenPercentHappierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappierTests.release.xcconfig"; path = "Target Support Files/Pods-TenPercentHappierTests/Pods-TenPercentHappierTests.release.xcconfig"; sourceTree = "<group>"; };
+		F720FD5D4007E20DF2857252 /* Pods-TenPercentHappier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenPercentHappier.release.xcconfig"; path = "Target Support Files/Pods-TenPercentHappier/Pods-TenPercentHappier.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D6C15772855974F0097BA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6633AB0DDF39062E076B07DC /* Pods_TenPercentHappier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C1590285597500097BA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC7A8905DF910518FD4BBD0 /* Pods_TenPercentHappierTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C159A285597500097BA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE540C6E05C2DB6FE0AFF48 /* Pods_TenPercentHappier_TenPercentHappierUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D3B431C28567786004EEDA0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B431D285677BE004EEDA0 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2D3B431F285679BB004EEDA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B4320285679DA004EEDA0 /* Topic.swift */,
+				2D3B432228567B4F004EEDA0 /* TopicsList.swift */,
+				2D3B433C2856C84B004EEDA0 /* SubtopicsList.swift */,
+				2D3B433E2856C868004EEDA0 /* Subtopic.swift */,
+				2D3B43402856C8BB004EEDA0 /* MeditationsList.swift */,
+				2D3B43422856C8C6004EEDA0 /* Meditation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D3B4326285681C7004EEDA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B432828568227004EEDA0 /* TopicCell.swift */,
+				2DC7DB0928592A8600E06755 /* SubtopicCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D3B4327285681CE004EEDA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B433A28569BE2004EEDA0 /* TopicsTableViewHeader.swift */,
+				2DC7DB072858501D00E06755 /* MeditationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D3B432C2856899B004EEDA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B432D285689D8004EEDA0 /* UIColor+Extensions.swift */,
+				2DC7DB1A28598DD100E06755 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D3B4348285814B6004EEDA0 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B4349285814EE004EEDA0 /* MeditationData.swift */,
+				2DC7DB0D28592E9100E06755 /* SubtopicData.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		2D6C15712855974F0097BA24 = {
+			isa = PBXGroup;
+			children = (
+				2D6C157C2855974F0097BA24 /* TenPercentHappier */,
+				2D6C1596285597500097BA24 /* TenPercentHappierTests */,
+				2D6C15A0285597500097BA24 /* TenPercentHappierUITests */,
+				2D6C157B2855974F0097BA24 /* Products */,
+				96DD9C1F6C5CA62B447C477C /* Pods */,
+				82ACA3BD8ACD5F3D9404A2D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D6C157B2855974F0097BA24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C157A2855974F0097BA24 /* TenPercentHappier.app */,
+				2D6C1593285597500097BA24 /* TenPercentHappierTests.xctest */,
+				2D6C159D285597500097BA24 /* TenPercentHappierUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D6C157C2855974F0097BA24 /* TenPercentHappier */ = {
+			isa = PBXGroup;
+			children = (
+				2D3B431C28567786004EEDA0 /* API */,
+				2D3B4326285681C7004EEDA0 /* Cells */,
+				2D6C15B4285648BF0097BA24 /* Coordinator */,
+				2D6C15B92856490F0097BA24 /* Enums */,
+				2D3B432C2856899B004EEDA0 /* Extensions */,
+				2D3B431F285679BB004EEDA0 /* Models */,
+				2DC7DB172859813400E06755 /* Persistor */,
+				2D6C15B3285648B70097BA24 /* Protocols */,
+				2DC7DB0F28597F3200E06755 /* Realm */,
+				2D3B4348285814B6004EEDA0 /* Structs */,
+				2D6C15B02856458E0097BA24 /* View Controllers */,
+				2D6C15BC28564B470097BA24 /* ViewModels */,
+				2D3B4327285681CE004EEDA0 /* Views */,
+				2D6C158E285597500097BA24 /* Info.plist */,
+				2D6C157D2855974F0097BA24 /* AppDelegate.swift */,
+				2D6C157F2855974F0097BA24 /* SceneDelegate.swift */,
+				2D6C1589285597500097BA24 /* Assets.xcassets */,
+				2D6C158B285597500097BA24 /* LaunchScreen.storyboard */,
+				2D6C15862855974F0097BA24 /* TenPercentHappier.xcdatamodeld */,
+			);
+			path = TenPercentHappier;
+			sourceTree = "<group>";
+		};
+		2D6C1596285597500097BA24 /* TenPercentHappierTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C1597285597500097BA24 /* TenPercentHappierTests.swift */,
+			);
+			path = TenPercentHappierTests;
+			sourceTree = "<group>";
+		};
+		2D6C15A0285597500097BA24 /* TenPercentHappierUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15A1285597500097BA24 /* TenPercentHappierUITests.swift */,
+				2D6C15A3285597500097BA24 /* TenPercentHappierUITestsLaunchTests.swift */,
+			);
+			path = TenPercentHappierUITests;
+			sourceTree = "<group>";
+		};
+		2D6C15B02856458E0097BA24 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15B1285645AA0097BA24 /* TopicsViewController.swift */,
+				2D3B432428567F1D004EEDA0 /* BaseViewController.swift */,
+				2D3B43442856D1C1004EEDA0 /* SubtopicsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2D6C15B3285648B70097BA24 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15B5285648CE0097BA24 /* Coordinating.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2D6C15B4285648BF0097BA24 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15B7285648D90097BA24 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2D6C15B92856490F0097BA24 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15BA2856497A0097BA24 /* Segues.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2D6C15BC28564B470097BA24 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C15BD28564C290097BA24 /* TopicsViewModel.swift */,
+				2D6C15BF28564CFA0097BA24 /* ViewModel.swift */,
+				2D3B432A28568562004EEDA0 /* TopicCellViewModel.swift */,
+				2D3B43462856D1F3004EEDA0 /* SubtopicsViewModel.swift */,
+				2DC7DB0B28592AC900E06755 /* SubtopicCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2DC7DB0F28597F3200E06755 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7DB1028597F4300E06755 /* Objects */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		2DC7DB1028597F4300E06755 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7DB1128597F5800E06755 /* TopicObject.swift */,
+				2DC7DB132859805300E06755 /* SubtopicObject.swift */,
+				2DC7DB15285980DA00E06755 /* MeditationObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		2DC7DB172859813400E06755 /* Persistor */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7DB182859814200E06755 /* Persistor.swift */,
+			);
+			path = Persistor;
+			sourceTree = "<group>";
+		};
+		82ACA3BD8ACD5F3D9404A2D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D057832AADEDC03232015CA /* Pods_TenPercentHappier.framework */,
+				A5062BB5D4AAB29986004158 /* Pods_TenPercentHappier_TenPercentHappierUITests.framework */,
+				7D122DBD184906174E2482BB /* Pods_TenPercentHappierTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96DD9C1F6C5CA62B447C477C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33EE055C342EE332C6E1EF9C /* Pods-TenPercentHappier.debug.xcconfig */,
+				F720FD5D4007E20DF2857252 /* Pods-TenPercentHappier.release.xcconfig */,
+				17CCAD241C3F1BCFDE9D10CC /* Pods-TenPercentHappier-TenPercentHappierUITests.debug.xcconfig */,
+				07ED7843DE60B61FBF1F2859 /* Pods-TenPercentHappier-TenPercentHappierUITests.release.xcconfig */,
+				4A7B47E5A416CCA5A1BFCAB8 /* Pods-TenPercentHappierTests.debug.xcconfig */,
+				A74A5C946A41101123E7EBEC /* Pods-TenPercentHappierTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D6C15792855974F0097BA24 /* TenPercentHappier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6C15A7285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappier" */;
+			buildPhases = (
+				B1530A020FE42778CA9051AE /* [CP] Check Pods Manifest.lock */,
+				2D6C15762855974F0097BA24 /* Sources */,
+				2D6C15772855974F0097BA24 /* Frameworks */,
+				2D6C15782855974F0097BA24 /* Resources */,
+				77A6DB7BB5356BF655A5AA9B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenPercentHappier;
+			productName = TenPercentHappier;
+			productReference = 2D6C157A2855974F0097BA24 /* TenPercentHappier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D6C1592285597500097BA24 /* TenPercentHappierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6C15AA285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappierTests" */;
+			buildPhases = (
+				865F5FE45FFD18FF1AE596F8 /* [CP] Check Pods Manifest.lock */,
+				2D6C158F285597500097BA24 /* Sources */,
+				2D6C1590285597500097BA24 /* Frameworks */,
+				2D6C1591285597500097BA24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D6C1595285597500097BA24 /* PBXTargetDependency */,
+			);
+			name = TenPercentHappierTests;
+			productName = TenPercentHappierTests;
+			productReference = 2D6C1593285597500097BA24 /* TenPercentHappierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D6C159C285597500097BA24 /* TenPercentHappierUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6C15AD285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappierUITests" */;
+			buildPhases = (
+				00A8B609D0987E8C27098113 /* [CP] Check Pods Manifest.lock */,
+				2D6C1599285597500097BA24 /* Sources */,
+				2D6C159A285597500097BA24 /* Frameworks */,
+				2D6C159B285597500097BA24 /* Resources */,
+				3A18BFFCE5F26D95C4ACFD6A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D6C159F285597500097BA24 /* PBXTargetDependency */,
+			);
+			name = TenPercentHappierUITests;
+			productName = TenPercentHappierUITests;
+			productReference = 2D6C159D285597500097BA24 /* TenPercentHappierUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D6C15722855974F0097BA24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2D6C15792855974F0097BA24 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					2D6C1592285597500097BA24 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 2D6C15792855974F0097BA24;
+					};
+					2D6C159C285597500097BA24 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 2D6C15792855974F0097BA24;
+					};
+				};
+			};
+			buildConfigurationList = 2D6C15752855974F0097BA24 /* Build configuration list for PBXProject "TenPercentHappier" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D6C15712855974F0097BA24;
+			productRefGroup = 2D6C157B2855974F0097BA24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D6C15792855974F0097BA24 /* TenPercentHappier */,
+				2D6C1592285597500097BA24 /* TenPercentHappierTests */,
+				2D6C159C285597500097BA24 /* TenPercentHappierUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D6C15782855974F0097BA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6C158D285597500097BA24 /* LaunchScreen.storyboard in Resources */,
+				2D6C158A285597500097BA24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C1591285597500097BA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C159B285597500097BA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A8B609D0987E8C27098113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenPercentHappier-TenPercentHappierUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A18BFFCE5F26D95C4ACFD6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier-TenPercentHappierUITests/Pods-TenPercentHappier-TenPercentHappierUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier-TenPercentHappierUITests/Pods-TenPercentHappier-TenPercentHappierUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier-TenPercentHappierUITests/Pods-TenPercentHappier-TenPercentHappierUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A6DB7BB5356BF655A5AA9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier/Pods-TenPercentHappier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier/Pods-TenPercentHappier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TenPercentHappier/Pods-TenPercentHappier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865F5FE45FFD18FF1AE596F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenPercentHappierTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1530A020FE42778CA9051AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenPercentHappier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D6C15762855974F0097BA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3B432528567F1D004EEDA0 /* BaseViewController.swift in Sources */,
+				2D6C157E2855974F0097BA24 /* AppDelegate.swift in Sources */,
+				2D3B432B28568562004EEDA0 /* TopicCellViewModel.swift in Sources */,
+				2D6C15C028564CFA0097BA24 /* ViewModel.swift in Sources */,
+				2D3B43472856D1F3004EEDA0 /* SubtopicsViewModel.swift in Sources */,
+				2D3B4321285679DA004EEDA0 /* Topic.swift in Sources */,
+				2DC7DB082858501D00E06755 /* MeditationView.swift in Sources */,
+				2DC7DB16285980DA00E06755 /* MeditationObject.swift in Sources */,
+				2D6C15802855974F0097BA24 /* SceneDelegate.swift in Sources */,
+				2D3B434A285814EE004EEDA0 /* MeditationData.swift in Sources */,
+				2DC7DB142859805300E06755 /* SubtopicObject.swift in Sources */,
+				2DC7DB1228597F5800E06755 /* TopicObject.swift in Sources */,
+				2D3B432928568227004EEDA0 /* TopicCell.swift in Sources */,
+				2D6C15B8285648D90097BA24 /* Coordinator.swift in Sources */,
+				2DC7DB0E28592E9100E06755 /* SubtopicData.swift in Sources */,
+				2D3B432328567B4F004EEDA0 /* TopicsList.swift in Sources */,
+				2D3B433F2856C868004EEDA0 /* Subtopic.swift in Sources */,
+				2D3B431E285677BE004EEDA0 /* API.swift in Sources */,
+				2D3B433B28569BE2004EEDA0 /* TopicsTableViewHeader.swift in Sources */,
+				2D3B43432856C8C6004EEDA0 /* Meditation.swift in Sources */,
+				2D3B43452856D1C1004EEDA0 /* SubtopicsViewController.swift in Sources */,
+				2DC7DB192859814200E06755 /* Persistor.swift in Sources */,
+				2D6C15BB2856497A0097BA24 /* Segues.swift in Sources */,
+				2D3B43412856C8BB004EEDA0 /* MeditationsList.swift in Sources */,
+				2D3B433D2856C84B004EEDA0 /* SubtopicsList.swift in Sources */,
+				2DC7DB1B28598DD100E06755 /* Array+Extensions.swift in Sources */,
+				2D3B432E285689D8004EEDA0 /* UIColor+Extensions.swift in Sources */,
+				2D6C15B6285648CE0097BA24 /* Coordinating.swift in Sources */,
+				2DC7DB0C28592AC900E06755 /* SubtopicCellViewModel.swift in Sources */,
+				2D6C15B2285645AA0097BA24 /* TopicsViewController.swift in Sources */,
+				2DC7DB0A28592A8600E06755 /* SubtopicCell.swift in Sources */,
+				2D6C15BE28564C290097BA24 /* TopicsViewModel.swift in Sources */,
+				2D6C15882855974F0097BA24 /* TenPercentHappier.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C158F285597500097BA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6C1598285597500097BA24 /* TenPercentHappierTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6C1599285597500097BA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6C15A4285597500097BA24 /* TenPercentHappierUITestsLaunchTests.swift in Sources */,
+				2D6C15A2285597500097BA24 /* TenPercentHappierUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D6C1595285597500097BA24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D6C15792855974F0097BA24 /* TenPercentHappier */;
+			targetProxy = 2D6C1594285597500097BA24 /* PBXContainerItemProxy */;
+		};
+		2D6C159F285597500097BA24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D6C15792855974F0097BA24 /* TenPercentHappier */;
+			targetProxy = 2D6C159E285597500097BA24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D6C158B285597500097BA24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D6C158C285597500097BA24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D6C15A5285597500097BA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D6C15A6285597500097BA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D6C15A8285597500097BA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EE055C342EE332C6E1EF9C /* Pods-TenPercentHappier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3PZ96V8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TenPercentHappier/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2D6C15A9285597500097BA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F720FD5D4007E20DF2857252 /* Pods-TenPercentHappier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3PZ96V8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TenPercentHappier/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2D6C15AB285597500097BA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7B47E5A416CCA5A1BFCAB8 /* Pods-TenPercentHappierTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenPercentHappier.app/TenPercentHappier";
+			};
+			name = Debug;
+		};
+		2D6C15AC285597500097BA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74A5C946A41101123E7EBEC /* Pods-TenPercentHappierTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenPercentHappier.app/TenPercentHappier";
+			};
+			name = Release;
+		};
+		2D6C15AE285597500097BA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17CCAD241C3F1BCFDE9D10CC /* Pods-TenPercentHappier-TenPercentHappierUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenPercentHappier;
+			};
+			name = Debug;
+		};
+		2D6C15AF285597500097BA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07ED7843DE60B61FBF1F2859 /* Pods-TenPercentHappier-TenPercentHappierUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tph.assignment.TenPercentHappierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenPercentHappier;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D6C15752855974F0097BA24 /* Build configuration list for PBXProject "TenPercentHappier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C15A5285597500097BA24 /* Debug */,
+				2D6C15A6285597500097BA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6C15A7285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C15A8285597500097BA24 /* Debug */,
+				2D6C15A9285597500097BA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6C15AA285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C15AB285597500097BA24 /* Debug */,
+				2D6C15AC285597500097BA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6C15AD285597500097BA24 /* Build configuration list for PBXNativeTarget "TenPercentHappierUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C15AE285597500097BA24 /* Debug */,
+				2D6C15AF285597500097BA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D6C15862855974F0097BA24 /* TenPercentHappier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D6C15872855974F0097BA24 /* TenPercentHappier.xcdatamodel */,
+			);
+			currentVersion = 2D6C15872855974F0097BA24 /* TenPercentHappier.xcdatamodel */;
+			path = TenPercentHappier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D6C15722855974F0097BA24 /* Project object */;
+}
